@@ -1,64 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 🚘 Sistema de Gerenciamento de Autoescola
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este projeto é um sistema web para gerenciamento completo de uma autoescola, desenvolvido com **Laravel**, **Blade**, **CSS**, **PHP** e **MySQL**. A aplicação oferece funcionalidades específicas para diferentes perfis de usuários. O objetivo é otimizar processos operacionais como cadastro de veículos, agendamento de aulas, controle financeiro e geração de relatórios.
 
-## About Laravel
+![Captura de Tela (27)](https://github.com/user-attachments/assets/269793b6-9f0e-4a4f-94ba-2dcc91d7412d)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🛠 Tecnologias Utilizadas
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- [Laravel](https://laravel.com/)
+- [Blade Templating](https://laravel.com/docs/8.x/blade)
+- [PHP](https://www.php.net/)
+- [MySQL](https://www.mysql.com/)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 👥 Perfis de Usuário
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 👑 Administrador
+- Gerenciamento completo de usuários do sistema.
+- Cadastro, edição e exclusão de veículos.
+- Registro de veículos com categorias específicas (ex: A, B, AB, etc).
+  
+![Captura de Tela (25)](https://github.com/user-attachments/assets/72964ebb-9af7-4d13-8cb6-19170680c353)
+![Captura de Tela (26)](https://github.com/user-attachments/assets/4981337a-65f0-4c8d-9b38-48e77e3f32b7)
 
-## Laravel Sponsors
+### 🧾 Recepção
+- Gerenciamento de alunos (cadastro, edição, desativação).
+- Controle de contas a pagar.
+- Acompanhamento das movimentações financeiras da autoescola.
+- Geração de relatórios financeiros e administrativos.
+  
+![Captura de Tela (24)](https://github.com/user-attachments/assets/652c1562-2a92-4631-b501-3841d3c6fecc)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### 🚗 Instrutor
+- Cadastro de serviços como manutenção veicular.
+- Definição de horários disponíveis para aulas práticas.
+- Controle de comissões recebidas.
+- Geração de relatórios de atividades e comissões.
+  
+![Captura de Tela (22)](https://github.com/user-attachments/assets/e9968a7b-2262-4875-b0e7-c1227070749b)
+![Captura de Tela (23)](https://github.com/user-attachments/assets/b993c7c5-c1b1-414f-9912-e24ac5983498)
 
-### Premium Partners
+> ⚠️ **Nota:** Os **alunos** não possuem acesso ao sistema. Todas as ações relacionadas a eles são gerenciadas pela recepção.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+---
 
-## Contributing
+## 📋 Funcionalidades Principais
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Autenticação e controle de acesso com base no perfil do usuário.
+- Interface simples e responsiva utilizando Blade e CSS.
+- Cadastro de veículos com controle por categoria.
+- Gestão de horários para aulas práticas.
+- Gerenciamento financeiro básico (contas a pagar, fluxo de caixa).
+- Relatórios gerenciais e de desempenho.
+- Registro e histórico de manutenções dos veículos.
+- Controle de comissões para instrutores.
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## ⚙️ Requisitos do Sistema
 
-## Security Vulnerabilities
+- PHP >= 7.4
+- Composer
+- MySQL 5.7+
+- Extensões PHP:
+  - OpenSSL
+  - PDO
+  - Mbstring
+  - Tokenizer
+  - XML
+  - Ctype
+  - JSON
+  - BCMath
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
